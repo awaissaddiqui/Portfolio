@@ -1,5 +1,5 @@
 import React from 'react'
-import home1 from "./images/home1.jpeg"
+import home1 from "../images/home1.jpeg"
 const AboutSection = () => {
   return (
     <div>
