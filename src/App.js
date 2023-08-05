@@ -1,13 +1,17 @@
 import React from 'react'
-import ServicesSection from './components/ServicesSection'
 // import pages 
-import AboutUs from './pages/AboutUs'
+import GlobalStyled from './components/GlobalStyled'
+import Home from './components/Home'
+import Nav from './components/Nav'
+import ServicesSection from './components/ServicesSection'
 
 
 const App = () => {
   return (
     <>
-     <AboutUs/>
+     <Nav/>
+     <Home/>
+     <GlobalStyled/>
      <ServicesSection/>
     </>
      )
