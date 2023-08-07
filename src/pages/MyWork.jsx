@@ -2,7 +2,7 @@ import React from 'react'
 // images
 import shofipy from "../images/assets/shofipy.jpg"
 import chattapp from "../images/assets/chattapp.jpg"
-import weather from "../images/assets/weather.png"
+import craps from "../images/assets/craps.png"
 import cal from "../images/assets/calculator.png"
 
 import styled from 'styled-components'
@@ -13,7 +13,7 @@ const MyWork = () => {
       <Project>
         <h2>The Shofipy</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/shopify">
         <img src={shofipy} alt="shofipy" />
         </Link>
       </Project>
@@ -21,23 +21,23 @@ const MyWork = () => {
       <Project>
         <h2>The Chat Application</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/chatapp">
         <img src={chattapp} alt="chattapp" />
         </Link>
       </Project>
 
       <Project>
-        <h2>The Weather App</h2>
+        <h2>Craps Game</h2>
         <div className="line"></div>
-        <Link>
-        <img src={weather} alt="weather" />
+        <Link to="/work/craps">
+        <img src={craps} alt="craps" />
         </Link>
       </Project>
 
       <Project>
         <h2>JQuery Calculator</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/calculator">
         <img src={cal} alt="calculator" />
         </Link>
       </Project>
