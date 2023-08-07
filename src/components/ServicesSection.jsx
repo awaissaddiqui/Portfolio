@@ -10,10 +10,11 @@ import postman from "../images/postman.svg"
 import material from "../images/materialui.svg"
 import github from "../images/github.svg"
 import home2 from "../images/home2.jpg"
+import styled from 'styled-components'
 
 const ServicesSection = () => {
      return (
-          <div className="container">
+          <Service className="container">
                <div className='description text-center'>
                          <div className="row g-5 ">
                               {/* React */}
@@ -92,8 +93,10 @@ const ServicesSection = () => {
                          <img src={home2} alt="home2" />
                     </div>
                </div>
-          </div>
+          </Service>
      )
 }
-
+const Service = styled.div`
+     padding: 5rem 5rem;
+`
 export default ServicesSection

@@ -1,18 +1,23 @@
 import React from 'react'
 // import pages 
 import GlobalStyled from './components/GlobalStyled'
-import Home from './components/Home'
 import Nav from './components/Nav'
 import ServicesSection from './components/ServicesSection'
-
-
+import AboutUs from './pages/AboutUs'
+import {Route, Routes} from "react-router-dom"
+import ContactUS from './pages/ContactUS'
+import MyWork from "./pages/MyWork"
 const App = () => {
   return (
     <>
      <Nav/>
-     <Home/>
      <GlobalStyled/>
-     <ServicesSection/>
+    <Routes>
+     <Route path='/' element={<AboutUs/>}/>
+     <Route path='/contact' element={<ContactUS/>}/>
+     <Route path='/work' element={<MyWork/>}/>
+     <Route path='/services' element={<ServicesSection/>}/>
+    </Routes>
     </>
      )
 }
