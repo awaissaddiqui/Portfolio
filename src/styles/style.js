@@ -1,6 +1,6 @@
 import styled from "styled-components"
 // styled Home.jsx
-export const Home1 = styled.div`
+const Home1 = styled.div`
 min-height: 90vh;
 display: flex;
 align-items: center;
@@ -8,14 +8,14 @@ justify-content: space-between;
 padding: 5rem 10rem;
 color: white;
 `;
-export const Description = styled.div`
+const Description = styled.div`
 flex:1;
 font-family: 'Lobster', cursive;
 h2{
   font-weight: lighter;
 }
 `;
-export const Image = styled.div`
+const Image = styled.div`
 flex: 1;
 overflow: hidden;
 img{
@@ -25,12 +25,12 @@ img{
   object-fit: cover;
 }
 `;
-export const Hide = styled.div`
+const Hide = styled.div`
   overflow: hidden;
 `;
 
 // styled Nav.jsx
-export const StyledNav = styled.nav`
+const StyledNav = styled.nav`
      display: flex;
      min-height: 10vh;
      margin: auto;
@@ -60,3 +60,71 @@ export const StyledNav = styled.nav`
      `;
 
 // style MyWork.jsx
+const Work = styled.div`
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 5rem 4rem;
+  h2{
+    padding: 1rem 0rem;
+  }
+  `;
+const Project = styled.div`
+    padding-bottom: 10rem;
+    .line{
+      height: 0.5rem;
+      background: #cccccc;
+      margin-bottom: 3rem;
+    }
+    img{
+      width: 100%;
+      height: 80vh;
+      /* object-fit: ; */
+    }
+  `;
+
+// style Project Detatil 
+
+const Details = styled.div`
+     color: white;
+`;
+const HeadLine = styled.div`
+     min-height: 90vh;
+     padding-top: 20vh;
+     position: relative;
+     h2{
+          position: absolute;
+          top: 10%;
+          left: 43%;
+          transform: translate(-10%, -10%);
+     }
+     video{
+          width: 100%;
+          height: 60vh;
+     }
+`;
+const Awards = styled.div`
+     min-height: 50vh;
+     display: flex;
+     margin: 5rem 10rem;
+     align-items: center;
+     justify-content: space-around;
+`;
+const AwardStyle = styled.div`
+     padding: 3rem;
+     h3{
+          font-size: 2rem;
+     }
+     .line{
+          width: 100%;
+          background: #23d997;
+          height: 0.5rem;
+          margin: 1rem 0rem;
+     }
+`;
+
+// Exports all components
+export {
+     Home1, Description, Image,
+     Hide, StyledNav, Work, Project,
+     Details, HeadLine, AwardStyle, Awards
+}

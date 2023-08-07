@@ -4,8 +4,9 @@ import shofipy from "../images/assets/shofipy.jpg"
 import chattapp from "../images/assets/chattapp.jpg"
 import craps from "../images/assets/craps.png"
 import cal from "../images/assets/calculator.png"
+// Import styled component
+import { Work, Project } from '../styles/style'
 
-import styled from 'styled-components'
 import {Link} from "react-router-dom"
 const MyWork = () => {
   return (
@@ -44,26 +45,4 @@ const MyWork = () => {
     </Work>
   )
 }
-
-const Work = styled.div`
-  min-height: 100vh;
-  overflow: hidden;
-  padding: 5rem 4rem;
-  h2{
-    padding: 1rem 0rem;
-  }
-  `;
-const Project = styled.div`
-    padding-bottom: 10rem;
-    .line{
-      height: 0.5rem;
-      background: #cccccc;
-      margin-bottom: 3rem;
-    }
-    img{
-      width: 100%;
-      height: 80vh;
-      /* object-fit: ; */
-    }
-  `;
 export default MyWork

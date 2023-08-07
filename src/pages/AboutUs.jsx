@@ -1,12 +1,13 @@
 import React from 'react'
-import Home from '../components/Home'
 // Page components
-
+import Home from '../components/Home'
+import FaqSection from "../components/FaqSection"
 
 const AboutUs = () => {
   return (
    <>
    <Home/>
+   <FaqSection/>
    </>
   )
 }
