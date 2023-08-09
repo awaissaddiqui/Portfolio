@@ -4,10 +4,10 @@ import shofipy from "../images/assets/shofipy.jpg"
 import chattapp from "../images/assets/chattapp.jpg"
 import craps from "../images/assets/craps.png"
 import cal from "../images/assets/calculator.png"
-// Import styled component
+// Import styled components
 import { Work, Project } from '../styles/style'
 
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 const MyWork = () => {
   return (
     <Work>
@@ -15,7 +15,7 @@ const MyWork = () => {
         <h2>The Shofipy</h2>
         <div className="line"></div>
         <Link to="/work/shopify">
-        <img src={shofipy} alt="shofipy" />
+          <img src={shofipy} alt="shofipy" />
         </Link>
       </Project>
 
@@ -23,7 +23,7 @@ const MyWork = () => {
         <h2>The Chat Application</h2>
         <div className="line"></div>
         <Link to="/work/chatapp">
-        <img src={chattapp} alt="chattapp" />
+          <img src={chattapp} alt="chattapp" />
         </Link>
       </Project>
 
@@ -31,7 +31,7 @@ const MyWork = () => {
         <h2>Craps Game</h2>
         <div className="line"></div>
         <Link to="/work/craps">
-        <img src={craps} alt="craps" />
+          <img src={craps} alt="craps" />
         </Link>
       </Project>
 
@@ -39,7 +39,7 @@ const MyWork = () => {
         <h2>JQuery Calculator</h2>
         <div className="line"></div>
         <Link to="/work/calculator">
-        <img src={cal} alt="calculator" />
+          <img src={cal} alt="calculator" />
         </Link>
       </Project>
     </Work>

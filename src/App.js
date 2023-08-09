@@ -22,6 +22,7 @@ const App = () => {
      <Route path='/services' element={<ServicesSection/>}/>
      <Route path='*' element={<Error/>}/>
     </Routes>
+
     </>
      )
 }

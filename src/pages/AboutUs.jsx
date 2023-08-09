@@ -5,10 +5,10 @@ import FaqSection from "../components/FaqSection"
 
 const AboutUs = () => {
   return (
-   <>
-   <Home/>
-   <FaqSection/>
-   </>
+    <>
+      <Home />
+      <FaqSection />
+    </>
   )
 }
 

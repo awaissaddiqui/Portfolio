@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { projectState } from "../projectState"
 //import styled components
-import { Details,HeadLine,Awards, AwardStyle } from '../styles/style';
+import { Details, HeadLine, Awards, AwardStyle } from '../styles/style';
 
 const ProjectDetail = () => {
      const param = useParams();
@@ -21,15 +21,15 @@ const ProjectDetail = () => {
                               <HeadLine>
                                    <h2>{project.title}</h2>
                                    <video controls>
-                                        <source src={project.video} type="video/mp4"/>
+                                        <source src={project.video} type="video/mp4" />
                                    </video>
                               </HeadLine>
                               <Awards>
-                                   {project.awards.map((award)=> (
-                                        <Award 
-                                        title={award.title}
-                                        description={award.projectDescription}
-                                        key={award.title}
+                                   {project.awards.map((award) => (
+                                        <Award
+                                             title={award.title}
+                                             description={award.projectDescription}
+                                             key={award.title}
                                         />
                                    ))}
                               </Awards>
@@ -39,8 +39,8 @@ const ProjectDetail = () => {
      )
 }
 // Award
-const Award = ({title , description})=>{
-     return(
+const Award = ({ title, description }) => {
+     return (
           <AwardStyle>
                <h3>{title}</h3>
                <div className="line"></div>
