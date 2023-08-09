@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Routes} from "react-router-dom"
+import {Route, Routes, useLocation} from "react-router-dom"
 // import pages 
 import GlobalStyled from './components/GlobalStyled'
 import Nav from './components/Nav'
@@ -9,12 +9,17 @@ import ContactUS from './pages/ContactUS'
 import MyWork from "./pages/MyWork"
 import Error from './components/Error'
 import ProjectDetail from './pages/ProjectDetail'
+// Import Animation
+import { AnimatePresence } from "framer-motion";
 const App = () => {
+  const location = useLocation();
+  
   return (
     <>
      <Nav/>
      <GlobalStyled/>
-    <Routes>
+     <AnimatePresence mode='wait'>
+    <Routes location={location} key={location.pathname}>
      <Route path='/' element={<AboutUs/>}/>
      <Route path='/contact' element={<ContactUS/>}/>
      <Route path='/work/' element={<MyWork/>}/>
@@ -22,6 +27,7 @@ const App = () => {
      <Route path='/services' element={<ServicesSection/>}/>
      <Route path='*' element={<Error/>}/>
     </Routes>
+     </AnimatePresence>
 
     </>
      )

@@ -12,97 +12,136 @@ import github from "../images/github.svg"
 // import home2 from "../images/home2.jpg"
 import styled from 'styled-components'
 import ChartD from './Chart'
+// Import Animation
+import { pageAnimation } from '../Animations/PageAnimation';
+import { motion } from 'framer-motion'
 const ServicesSection = () => {
      return (
-          <Service className="container">
+          <Service
+               variants={pageAnimation}
+               initial="hidden"
+               animate="show"
+               exit="exit"
+               className="container">
                <div className='description text-center m-5'>
                     <div className="row g-4">
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+                                   className="card">
                                    <img className="card-img" src={react} alt="react" />
                                    <div className="card-body">
                                         <h4 className="card-title">React JS</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+                                   className="card">
                                    <img className="card-img" src={javascript} alt="JS" />
                                    <div className="card-body">
                                         <h4 className="card-title">JavaScript</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+
+                                   className="card">
                                    <img className="card-img" src={mongodb} alt="database" />
                                    <div className="card-body">
                                         <h4 className="card-title">Mongo DB</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <Line className='line'></Line>
 
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+
+                                   className="card">
                                    <img className="card-img" src={mysql} alt="mysql" />
                                    <div className="card-body">
                                         <h4 className="card-title">MYSQL</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+
+                                   className="card">
                                    <img className="card-img" src={nodejs} alt="nodejs" />
                                    <div className="card-body">
                                         <h4 className="card-title">Node JS</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+
+                                   className="card">
                                    <img className="card-img" src={python} alt="python" />
                                    <div className="card-body">
                                         <h4 className="card-title">Python</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <Line className='line'></Line>
 
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }}
+                                   className="card">
                                    <img className="card-img" src={postman} alt="postman" />
                                    <div className="card-body">
                                         <h4 className="card-title">Postman</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }} className="card">
                                    <img className="card-img" src={material} alt="material" />
                                    <div className="card-body">
                                         <h4 className="card-title">Material UI</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                          <div className="col-sm-4">
-                              <div className="card">
+                              <motion.div
+                                   whileTap={{ scale: 0.8 }}
+                                   whileHover={{ scale: 1.1 }} className="card">
                                    <img className="card-img" src={github} alt="github" />
                                    <div className="card-body">
                                         <h4 className="card-title">Github</h4>
                                    </div>
-                              </div>
+                              </motion.div>
                          </div>
                     </div>
                </div>
-               <div className="chart container w-75 bg-light fw-bold">
+               <motion.div
+                    whileTap={{ scale: 0.8 }}
+                    whileHover={{ scale: 1.1 }} className="chart container w-75 bg-light fw-bold">
                     <ChartD />
-               </div>
+               </motion.div>
 
           </Service>
      )
 }
-const Service = styled.div`
+const Service = styled(motion.div)`
      padding: 5rem 5rem;
 `
 const Line = styled.line`

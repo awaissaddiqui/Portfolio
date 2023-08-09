@@ -5,17 +5,33 @@ import chattapp from "../images/assets/chattapp.jpg"
 import craps from "../images/assets/craps.png"
 import cal from "../images/assets/calculator.png"
 // Import styled components
-import { Work, Project } from '../styles/style'
+import { Work, Project, Hide, Framer1, Framer2, Framer3, Framer4 } from '../styles/style'
+// Import Animation
+import { motion } from "framer-motion"
+import { slider, sliderContainer, pageAnimation, paraAnimation, photoAnimation, lineAnimation } from '../Animations/PageAnimation';
 
 import { Link } from "react-router-dom"
 const MyWork = () => {
   return (
-    <Work>
+    <Work
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
+      <motion.div variants={sliderContainer}>
+        <Framer1 variants={slider}></Framer1>
+        <Framer2 variants={slider}></Framer2>
+        <Framer3 variants={slider}></Framer3>
+        <Framer4 variants={slider}></Framer4>
+      </motion.div>
       <Project>
-        <h2>The Shofipy</h2>
-        <div className="line"></div>
+        <motion.h2 variants={paraAnimation}  >The Shofipy</motion.h2>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/shopify">
-          <img src={shofipy} alt="shofipy" />
+          <Hide>
+            <motion.img variants={photoAnimation} src={shofipy} alt="shofipy" />
+          </Hide>
         </Link>
       </Project>
 

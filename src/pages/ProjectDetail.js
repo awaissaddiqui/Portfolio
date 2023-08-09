@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 import { projectState } from "../projectState"
 //import styled components
 import { Details, HeadLine, Awards, AwardStyle } from '../styles/style';
-
+// Import Animation
+import { pageAnimation } from '../Animations/PageAnimation';
 const ProjectDetail = () => {
      const param = useParams();
      const [projects, setProjects] = useState(projectState);
@@ -17,7 +18,12 @@ const ProjectDetail = () => {
           <>
                {project &&
                     (
-                         <Details>
+                         <Details 
+                         variants={pageAnimation}
+                         initial="hidden"
+                         animate="show"
+                         exit="exit"
+                         >
                               <HeadLine>
                                    <h2>{project.title}</h2>
                                    <video controls>
