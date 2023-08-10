@@ -8,13 +8,16 @@ import cal from "../images/assets/calculator.png"
 import { Work, Project, Hide, Framer1, Framer2, Framer3, Framer4 } from '../styles/style'
 // Import Animation
 import { motion } from "framer-motion"
-import { slider, sliderContainer, pageAnimation, paraAnimation, photoAnimation, lineAnimation } from '../Animations/PageAnimation';
-
+import { slider, sliderContainer, pageAnimation, paraAnimation, photoAnimation, lineAnimation, scrollReveal } from '../Animations/PageAnimation';
+import { useScroll } from '../components/UseScroll'
 import { Link } from "react-router-dom"
 const MyWork = () => {
+  const [element1, controls1]= useScroll();
+  const [element2, controls2]= useScroll();
+  const [element3, controls3]= useScroll();
   return (
     <Work
-      exit="exit"
+      exit="exit" 
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -35,25 +38,25 @@ const MyWork = () => {
         </Link>
       </Project>
 
-      <Project>
+      <Project variants={scrollReveal} ref={element1} initial="hidden" animate={controls1} >
         <h2>The Chat Application</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/chatapp">
           <img src={chattapp} alt="chattapp" />
         </Link>
       </Project>
 
-      <Project>
+      <Project variants={scrollReveal} ref={element2} initial="hidden" animate={controls2}>
         <h2>Craps Game</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/craps">
           <img src={craps} alt="craps" />
         </Link>
       </Project>
 
-      <Project>
+      <Project variants={scrollReveal} ref={element3} initial="hidden" animate={controls3}>
         <h2>JQuery Calculator</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/calculator">
           <img src={cal} alt="calculator" />
         </Link>

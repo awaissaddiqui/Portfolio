@@ -10,6 +10,7 @@ const ProjectDetail = () => {
      const param = useParams();
      const [projects, setProjects] = useState(projectState);
      const [project, setProject] = useState("");
+     console.log(setProjects);
      useEffect(() => {
           const currentProject = projects.filter((stateProject) => stateProject.id === param.id)
           setProject(currentProject[0])
