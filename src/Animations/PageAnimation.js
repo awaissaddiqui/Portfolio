@@ -98,6 +98,7 @@ const sliderContainer={
      }
 }
 
+
 export {
      pageAnimation,
      titleAnimation,

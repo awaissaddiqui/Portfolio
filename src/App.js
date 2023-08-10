@@ -13,7 +13,6 @@ import ProjectDetail from './pages/ProjectDetail'
 import { AnimatePresence } from "framer-motion";
 const App = () => {
   const location = useLocation();
-  
   return (
     <>
      <Nav/>
