@@ -1,11 +1,15 @@
 import React from 'react'
+
 // images
 import shofipy from "../images/assets/shofipy.jpg"
 import chattapp from "../images/assets/chattapp.jpg"
 import craps from "../images/assets/craps.png"
 import cal from "../images/assets/calculator.png"
+
 // Import styled components
-import { Work, Project, Hide, Framer1, Framer2, Framer3, Framer4 } from '../styles/style'
+import { Work, Project, Hide, Framer1, Framer2, Framer3, Framer4 } from '../styles/myWorkStyles'
+import ScrolTop from '../components/ScrolTop'
+
 // Import Animation
 import { motion } from "framer-motion"
 import { slider, sliderContainer, pageAnimation, paraAnimation, photoAnimation, lineAnimation, scrollReveal } from '../Animations/PageAnimation';
@@ -61,6 +65,7 @@ const MyWork = () => {
           <img src={cal} alt="calculator" />
         </Link>
       </Project>
+      <ScrolTop/>
     </Work>
   )
 }

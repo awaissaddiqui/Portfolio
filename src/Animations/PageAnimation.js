@@ -114,18 +114,6 @@ const scrollReveal ={
           }
      }
 }
-
-const swoopAdoop= {
-     hidden:{
-          width: "0%"
-     },
-     show:"100%",
-     transition:{
-          ease:"easeOut",
-          duration:1
-     }
-}
-
 export {
      pageAnimation,
      titleAnimation,
@@ -134,6 +122,5 @@ export {
      lineAnimation,
      sliderContainer,
      scrollReveal,
-     swoopAdoop,
      slider,
 };

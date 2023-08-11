@@ -10,7 +10,12 @@ const GlobalStyled = createGlobalStyle`
 }
 body{
      background: #1b1b1b;
-     
+     overflow-x: hidden;
+}
+html{
+     @media(max-width:1200px){
+          font-size: 40%;
+     }
 }
 button{
      font-weight: bold;
@@ -29,7 +34,7 @@ button{
 }
      h2{
           font-weight: lighter;
-          font-size: 4rem;
+          font-size: 3rem;
      }
      h3{
           color: white;

@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 //Import Image
 import home1 from "../images/home1.png"
 //Import Styled Components
-import { Home1, Description, Image, Hide } from '../styles/style'
+import { Home1, Description, Image, Hide } from '../styles/homeStyle'
 // Wave
 import Wave from './Wave';
 const Home = () => {

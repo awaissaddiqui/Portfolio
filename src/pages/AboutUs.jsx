@@ -4,6 +4,7 @@ import Home from '../components/Home'
 // Import Animation
 import { motion } from "framer-motion";
 import { pageAnimation } from '../Animations/PageAnimation';
+import ScrolTop from '../components/ScrolTop';
 const AboutUs = () => {
   return (
     <motion.div
@@ -12,6 +13,7 @@ const AboutUs = () => {
       animate="show"
       exit="exit">
       <Home />
+      <ScrolTop/>
     </motion.div>
   )
 }

@@ -3,13 +3,14 @@ import { useParams } from 'react-router-dom';
 
 import { projectState } from "../projectState"
 //import styled components
-import { Details, HeadLine, Awards, AwardStyle } from '../styles/style';
+import { Details, HeadLine, Awards, AwardStyle } from '../styles/projectDetailStyle';
 // Import Animation
 import { pageAnimation } from '../Animations/PageAnimation';
 const ProjectDetail = () => {
      const param = useParams();
      const [projects, setProjects] = useState(projectState);
      const [project, setProject] = useState("");
+  
      console.log(setProjects);
      useEffect(() => {
           const currentProject = projects.filter((stateProject) => stateProject.id === param.id)
@@ -25,7 +26,7 @@ const ProjectDetail = () => {
                          animate="show"
                          exit="exit"
                          >
-                              <HeadLine>
+                              <HeadLine >
                                    <h2>{project.title}</h2>
                                    <video controls>
                                         <source src={project.video} type="video/mp4" />

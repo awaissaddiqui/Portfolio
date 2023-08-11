@@ -2,7 +2,8 @@ import React,{useRef} from 'react'
 import emailjs from "emailjs-com"
 // Import Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from '../Animations/PageAnimation';
+import { pageAnimation, titleAnimation } from '../Animations/PageAnimation';
+import {ContactStyle, Title, Hide} from "../styles/contactStyle";
 const ContactUS = () => {
   const form = useRef();
 const sendEmail=(e)=>{
@@ -17,31 +18,31 @@ const sendEmail=(e)=>{
   }).catch((err) =>{
     console.log(err);
   })
+  console.log(e);
 }
   return (
-    <div className="contact " style={{"background":"white"}}>
+    <ContactStyle className="contact " style={{"background":"white"}}>
 
     <motion.div 
     variants={pageAnimation}
     initial="hidden"
     animate="show"
     exit="exit"
-    
     >
+        <Hide>
+      <Title>
+          <motion.h2 variants={titleAnimation}>Get In Touch</motion.h2>
+      </Title>
+        </Hide>
       <form ref={form} onSubmit={sendEmail} >
-        <label htmlFor="name">name</label>
-        <input type="text" name="name" id="name" required />
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" required />
-        <label htmlFor="subject">Subject</label>
-        <input type="text" name="subject" id="subject" required />
-
-        <label htmlFor="message">Message</label>
-        <textarea name='message' id='message' required/>
+        <input type="text" name="name" id="name" placeholder='Name' required />
+        <input type="email" name="email" id="email" placeholder='Email' required />
+        <input type="text" name="subject" id="subject" placeholder='Subject' required />
+        <textarea name='message' id='message' placeholder='Message' required/>
         <input type="submit" value="send" />
       </form>
     </motion.div>
-    </div>
+    </ContactStyle>
   )
 }
 
