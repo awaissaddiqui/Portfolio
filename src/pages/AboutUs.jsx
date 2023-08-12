@@ -1,6 +1,7 @@
 import React from 'react'
 // Page components
 import Home from '../components/Home'
+import Footer from '../components/Footer';
 // Import Animation
 import { motion } from "framer-motion";
 import { pageAnimation } from '../Animations/PageAnimation';
@@ -14,6 +15,7 @@ const AboutUs = () => {
       exit="exit">
       <Home />
       <ScrolTop/>
+      <Footer/>
     </motion.div>
   )
 }
