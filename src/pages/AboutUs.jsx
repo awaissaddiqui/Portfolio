@@ -6,6 +6,8 @@ import Footer from '../components/Footer';
 import { motion } from "framer-motion";
 import { pageAnimation } from '../Animations/PageAnimation';
 import ScrolTop from '../components/ScrolTop';
+import Carusel from '../components/Carusel';
+import Resume from '../components/Resume';
 const AboutUs = () => {
   return (
     <motion.div
@@ -15,6 +17,8 @@ const AboutUs = () => {
       exit="exit">
       <Home />
       <ScrolTop/>
+      <Resume/>
+      <Carusel/>
       <Footer/>
     </motion.div>
   )

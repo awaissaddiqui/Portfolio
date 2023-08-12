@@ -9,7 +9,12 @@ import home1 from "../images/home1.png"
 import { Home1, Description, Image, Hide } from '../styles/homeStyle'
 // Wave
 import Wave from './Wave';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+  const navigation = useNavigate();
+  const buttonClicked=()=>{
+    navigation("/contact")
+  }
   return (
     <Home1 >
       <Description>
@@ -26,7 +31,7 @@ const Home = () => {
         </motion.div>
         <motion.p variants={paraAnimation}>We are providing an amazing skills .
           Please contact us for professional work</motion.p>
-        <motion.button variants={paraAnimation}>Contact Us</motion.button>
+        <motion.button variants={paraAnimation} onClick={buttonClicked} >Contact Us</motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnimation}  src={home1} alt="home1" />
