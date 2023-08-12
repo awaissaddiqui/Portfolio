@@ -11,6 +11,7 @@ import Error from './components/Error'
 import ProjectDetail from './pages/ProjectDetail'
 // Import Animation
 import { AnimatePresence } from "framer-motion";
+import ThankYou from './components/ThankYou'
 const App = () => {
   const location = useLocation();
   return (
@@ -25,6 +26,7 @@ const App = () => {
      <Route path='/work/:id' element={<ProjectDetail/>}/>
      <Route path='/services' element={<ServicesSection/>}/>
      <Route path='*' element={<Error/>}/>
+     <Route path='/thanks' element={<ThankYou/>} />
     </Routes>
      </AnimatePresence>
 

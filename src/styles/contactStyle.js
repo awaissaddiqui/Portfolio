@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 
 const ContactStyle = styled(motion.div)`
-  padding: 4rem 9rem;
+  padding: 3.5rem 9rem;
   color:#353535;
   min-height: 90vh;
 `;
@@ -11,6 +11,13 @@ const Title = styled.div`
   margin-bottom: 3rem;
   color: black;
 
+`;
+const Address= styled(motion.div)` 
+ span{
+   font-size: 1.2rem;
+  font-weight: bolder;
+  color: blue;
+ }
 `;
 const Hide=styled.div`
   overflow: hidden;
@@ -55,13 +62,13 @@ const StyledText = styled.textarea`
   border-radius: 15px;
   margin-top: 1.5rem;
   padding: 1rem;
-  &:hover{
-  border:1px solid #D96ED4;
   font-family: "Lobster", cursive;
   font-size: 1.5rem;
-  @media(max-width: 576px){
-    font-size: 1rem;
-  }
+  &:hover{
+  border:1px solid #D96ED4;
+}
+@media(max-width: 576px){
+  font-size: 1rem;
 }
 `;
 const StyledButton = styled.button`
@@ -79,5 +86,8 @@ const StyledButton = styled.button`
   &:hover{
     background-color: #D96ED4;
   }
+  @media(max-width: 576px){
+    margin: 2rem 15rem;
+  }
 `;
-export {ContactStyle, Title, Hide, Form,StyledInput,StyledText, StyledButton}
+export {ContactStyle,Address, Title, Hide, Form,StyledInput,StyledText, StyledButton}
