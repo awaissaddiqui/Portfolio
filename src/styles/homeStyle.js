@@ -36,7 +36,9 @@ const Image = styled.div`
      width: 100%;
      height: 74vh;
      object-fit: cover;
-     margin: 0rem 3.5rem;
+     margin: 0rem 2.5rem;
+     border: 0px solid black;
+     border-radius: 20px;
      }
      @media (max-width: 900px){
           width: 100%;
