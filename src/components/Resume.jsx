@@ -1,18 +1,21 @@
+import { motion } from 'framer-motion';
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { scrollReveal } from '../Animations/PageAnimation';
+import {useScroll} from "../components/UseScroll"
 const Resume = () => {
+     const [element, controls] = useScroll();
   return (
   <>
-  <Button>
+  <Button ref={element} variants={scrollReveal} initial="hidden" animate={controls}>
      <a href='Awais.pdf' download="Awais.pdf">Download CV</a>     
      </Button>
   
   </>
   )
 }
-
-const Button = styled.button`
-     margin:4rem 10rem;
+const Button = styled(motion.button)`
+     margin:8rem 10rem;
      border: 3px solid #23d997;
      padding: 1rem 1.5rem;
      a{

@@ -1,14 +1,20 @@
 import React from 'react'
-import { StyledNav, Line } from '../styles/NavStyle'
+import { StyledNav, Line,Hide } from '../styles/NavStyle'
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import logo from "../images/footer/logo.svg"
+
 const Nav = () => {
      const {pathname} = useLocation();
 
      return (
           <StyledNav>
                <h1>
-                    <Link id='logo' to="/">Capture</Link>
+                    <Link to="/">
+                         <Hide>
+                         <img src={logo} id='logo'  alt="logo" />
+                         </Hide>
+                         </Link>
                </h1>
                <ul>
                     <li>
@@ -40,8 +46,6 @@ const Nav = () => {
 
      )
 }
-
-
 
 
 export default Nav

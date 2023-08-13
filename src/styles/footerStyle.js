@@ -31,6 +31,7 @@ export const FooterStyle = styled.footer`
           height: 10vh;
           margin: -2rem 0rem;
           padding: 8rem 0rem;
+          z-index: 2;
      }
      `; 
 export const Privacy = styled.div`

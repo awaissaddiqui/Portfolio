@@ -17,21 +17,22 @@ const Home = () => {
   }
   return (
     <Home1 >
+      {/* Elevating Ideas through Code A Journey of Innovation and Creation */}
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnimation}>We work to make </motion.h2>
+            <motion.h2 variants={titleAnimation}>Elevating Ideas through</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnimation}>your <span>dreams</span> come </motion.h2>
+            <motion.h2 variants={titleAnimation}>Code A<span>Journey</span> of</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnimation}>true</motion.h2>
+            <motion.h2 variants={titleAnimation}> Innovation and Creation</motion.h2>
           </Hide>
         </motion.div>
-        <motion.p variants={paraAnimation}>We are providing an amazing skills .
+        <motion.p variants={paraAnimation}>I'm providing an amazing skills .
           Please contact us for professional work</motion.p>
-        <motion.button variants={paraAnimation} onClick={buttonClicked} >Contact Us</motion.button>
+        <motion.button variants={paraAnimation} onClick={buttonClicked} >Let's Talk</motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnimation}  src={home1} alt="home1" />

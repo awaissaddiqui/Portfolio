@@ -21,11 +21,10 @@ const StyledNav = styled.nav`
           list-style: none;
           font-family: "Inter", sans-serif;
      }
-     #logo{
-          font-size: 1.5rem;
-          font-family: "Lobster" , cursive;
-          font-weight: lighter;
-          color: white;
+     img{
+
+          width: 15%;
+          margin: 0rem 2rem;
      }
      li{
           padding-left: 9rem;
@@ -36,7 +35,8 @@ const StyledNav = styled.nav`
           padding: 2rem 2rem;
           #logo{
                display: inline-block;
-               margin: 1.5rem;
+               margin: 0rem 30rem;
+               width: 13%;
           }
           ul{
                padding: 2rem;
@@ -48,7 +48,9 @@ const StyledNav = styled.nav`
           }
      }
      `;
-
+const Hide = styled.div`
+overflow: hidden;
+`;
 
 const Line = styled(motion.div)` 
      height: 0.3rem;
@@ -63,4 +65,4 @@ const Line = styled(motion.div)`
      
  `;
 
- export {StyledNav, Line}
+ export {StyledNav,Hide, Line}
