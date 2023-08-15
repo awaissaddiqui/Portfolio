@@ -12,7 +12,7 @@ const Nav = () => {
                <h1>
                     <Link to="/">
                          <Hide>
-                         <img src={logo} id='logo'  alt="logo" />
+                         <img src={logo} id='logo'  alt="web developer " />
                          </Hide>
                          </Link>
                </h1>

@@ -6,7 +6,8 @@ import { motion } from 'framer-motion'
 const Error = () => {
   return (
     <Image>
-      <motion.img src={error} variants={lineAnimation} initial="hidden" animate="show" alt="error" className="error"/>
+      <motion.img src={error} variants={lineAnimation} 
+      initial="hidden" animate="show" alt="error page" className="error"/>
     </Image>
   )
 }

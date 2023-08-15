@@ -14,7 +14,7 @@ const Footer = () => {
      <>
     <FooterStyle>
       <div className='icons' >
-     <a href={upworkUrl} ><img className='upwork' src={upwork} alt="upwork" /></a>
+     <a href={upworkUrl} ><img className='upwork' src={upwork} alt="upwork freelancing" /></a>
      <a href={gitUrl} ><img src={github} alt="github" /></a>
      <a href={linkedUrl} ><img className='linkedin' src={linkedin} alt="linkedin" /></a>    
       </div>

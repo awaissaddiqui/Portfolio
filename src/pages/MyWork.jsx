@@ -37,7 +37,7 @@ const MyWork = () => {
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/shopify">
           <Hide>
-            <motion.img variants={photoAnimation} src={shofipy} alt="shofipy" />
+            <motion.img variants={photoAnimation} src={shofipy} alt="Awais Developer" />
           </Hide>
         </Link>
       </Project>
@@ -46,7 +46,7 @@ const MyWork = () => {
         <h2>The Chat Application</h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/chatapp">
-          <img src={chattapp} alt="chattapp" />
+          <img src={chattapp} alt="chat application" />
         </Link>
       </Project>
 
@@ -54,7 +54,7 @@ const MyWork = () => {
         <h2>Craps Game</h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/craps">
-          <img src={craps} alt="craps" />
+          <img src={craps} alt="craps game" />
         </Link>
       </Project>
 
@@ -62,7 +62,7 @@ const MyWork = () => {
         <h2>JQuery Calculator</h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/calculator">
-          <img src={cal} alt="calculator" />
+          <img src={cal} alt="calculator application" />
         </Link>
       </Project>
       <ScrolTop/>

@@ -50,9 +50,9 @@ const ContactUS = () => {
           <motion.h2 variants={titleAnimation}>Get In Touch</motion.h2>
       </Title>
       <Address variants={photoAnimation} initial="hidden" animate="show">
-        <div className='phone'><span><img src={phone} alt="phone" /></span>Phone: <span>+92343-9856501</span> </div>
-        <div className='email'><span><img src={emailPic} alt="email" /></span>Email: <span>awaissaddiqui143@gmail.com</span></div> 
-        <div className='address'><span><img src={location} alt="address" /></span>Address: <span>Islamabad, Pakistan</span></div>  
+        <div className='phone'><span><img src={phone} alt="Awais phone" /></span>Phone: <span>+92343-9856501</span> </div>
+        <div className='email'><span><img src={emailPic} alt="awais email" /></span>Email: <span>awaissaddiqui143@gmail.com</span></div> 
+        <div className='address'><span><img src={location} alt="Awais address" /></span>Address: <span>Islamabad, Pakistan</span></div>  
       </Address>
         </Hide>
       <Form ref={form} onSubmit={sendEmail} id="form" >

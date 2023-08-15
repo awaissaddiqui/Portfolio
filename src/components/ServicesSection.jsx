@@ -40,7 +40,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={react} alt="react" />
+                                        <img className="card-img" src={react} alt="react developer" />
                                         <div className="card-body">
                                              <h4 className="card-title">React JS</h4>
                                         </div>
@@ -52,7 +52,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={javascript} alt="JS" />
+                                        <img className="card-img" src={javascript} alt="JavaScript developer" />
                                         <div className="card-body">
                                              <h4 className="card-title">JavaScript</h4>
                                         </div>
@@ -64,7 +64,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={mongodb} alt="database" />
+                                        <img className="card-img" src={mongodb} alt="mongodb developer" />
                                         <div className="card-body">
                                              <h4 className="card-title">Mongo DB</h4>
                                         </div>
@@ -79,7 +79,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={mysql} alt="mysql" />
+                                        <img className="card-img" src={mysql} alt="mysql database" />
                                         <div className="card-body">
                                              <h4 className="card-title">MYSQL</h4>
                                         </div>
@@ -91,7 +91,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={nodejs} alt="nodejs" />
+                                        <img className="card-img" src={nodejs} alt="nodejs developer" />
                                         <div className="card-body">
                                              <h4 className="card-title">Node JS</h4>
                                         </div>
@@ -103,7 +103,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={python} alt="python" />
+                                        <img className="card-img" src={python} alt="python programmer" />
                                         <div className="card-body">
                                              <h4 className="card-title">Python</h4>
                                         </div>
@@ -117,7 +117,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={postman} alt="postman" />
+                                        <img className="card-img" src={postman} alt="postman api" />
                                         <div className="card-body">
                                              <h4 className="card-title">Postman</h4>
                                         </div>
@@ -129,7 +129,7 @@ const ServicesSection = () => {
                                         whileHover={{ scale: 1.1 }}
                                         className="card"
                                    >
-                                        <img className="card-img" src={material} alt="material" />
+                                        <img className="card-img" src={material} alt="material ui design" />
                                         <div className="card-body">
                                              <h4 className="card-title">Material UI</h4>
                                         </div>

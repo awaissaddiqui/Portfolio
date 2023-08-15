@@ -35,7 +35,7 @@ const Home = () => {
         <motion.button variants={paraAnimation} onClick={buttonClicked} >Let's Talk</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnimation}  src={home1} alt="home1" />
+        <motion.img variants={photoAnimation}  src={home1} alt="React developer portfolio" />
       </Image>
       <Wave/>
     </Home1>

@@ -19,19 +19,19 @@ const Carusel = () => {
         className='w-100 d-block'
         itemId={1}
         src={AI}
-        alt='...'
+        alt='Artificial intelligence '
       />
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={2}
         src={ml}
-        alt='...'
+        alt='Machine learing'
       />
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={3}
         src={skill}
-        alt='...'
+        alt='tech certificates'
       />
     </MDBCarousel>
     </Transition>
