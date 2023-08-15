@@ -17,7 +17,7 @@ import ChartD from "./Chart";
 import ScrolTop from "./ScrolTop";
 
 // Import Animation
-import { pageAnimation } from "../Animations/PageAnimation";
+import { pageAnimation,titleAnimation } from "../Animations/PageAnimation";
 import { motion } from "framer-motion";
 
 
@@ -31,8 +31,8 @@ const ServicesSection = () => {
                     exit="exit"
                     className="container"
                >
-                    <div
-                         className="description text-center m-5">
+                <motion.h2 variants={titleAnimation}>TECH I'M FAMILIAR WITH</motion.h2>
+                    <div className="description text-center m-5">
                          <div className="row">
                               <div className="col-sm-4">
                                    <motion.div
@@ -164,6 +164,11 @@ const ServicesSection = () => {
 };
 const Service = styled(motion.div)`
   padding: 5rem 5rem;
+  h2{
+     padding-left: 3rem;
+     color: white;
+  }
+  
   @media (max-width: 576px){
                .col-sm-4{
                width: 30%;
@@ -171,6 +176,7 @@ const Service = styled(motion.div)`
                margin-bottom: 2rem;
           }
      }
+
 `;
 const Line2 = styled.line`
   height: 0.5rem;
