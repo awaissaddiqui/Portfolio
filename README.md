@@ -25,6 +25,10 @@ This is my professional portfolio website, created using ReactJS and a variety o
 - UUID
 - Web Vitals
 
+# Live:
+
+https://awais-saddiqui.web.app/
+
 ## How To use:
 
 ### `npm install`
