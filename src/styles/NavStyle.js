@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 const StyledNav = styled.nav`
      display: flex;
-     min-height: 10vh;
      margin: auto;
      justify-content: space-between;
      align-items: center;
@@ -32,16 +31,19 @@ const StyledNav = styled.nav`
      }
      @media (max-width: 576px){
           flex-direction: column;
-          padding: 2rem 2rem;
+          padding: 2rem 4rem;
+          position: sticky;
+          
           #logo{
                display: inline-block;
-               margin: 0rem 30rem;
+               margin: 0rem 45rem;
                width: 13%;
           }
           ul{
-               padding: 2rem;
+               padding: 0.5rem;
                justify-content: space-around;
                width: 100%;
+               margin: 0rem 2rem;
           }
           li{
                padding: 0;

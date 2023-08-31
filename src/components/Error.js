@@ -18,7 +18,7 @@ const Image = styled(motion.div)`
      height: 100vh;
      width: 100%;
      background: #8ed2ff;
-     @media(max-width: 1300px){
+     @media(max-width: 500px){
       width: 100%;
      }
 `;

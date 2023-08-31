@@ -1,10 +1,9 @@
 import React from 'react'
-import { FooterStyle, Privacy } from '../styles/footerStyle'
-//import svg logs
-import upwork from "../images/footer/upwork.svg"
-import linkedin from "../images/footer/linkedin.svg"
-import github from "../images/footer/github.svg"
-// import twitter from "../images/footer/twitter.svg"
+import { FooterStyle} from '../styles/footerStyle'
+//import png logs
+import upwork from "../images/footer/upwork.png"
+import linkedin from "../images/footer/linkedin.png"
+import github from "../images/footer/github.png"
 
 const Footer = () => {
      let gitUrl ='https://github.com/awaissaddiqui';
@@ -15,11 +14,11 @@ const Footer = () => {
     <FooterStyle>
       <div className='icons' >
      <a href={upworkUrl} ><img className='upwork' src={upwork} alt="upwork freelancing" /></a>
-     <a href={gitUrl} ><img src={github} alt="github" /></a>
-     <a href={linkedUrl} ><img className='linkedin' src={linkedin} alt="linkedin" /></a>    
+     <a href={gitUrl} ><img src={github} alt="Awais github" /></a>
+     <a href={linkedUrl} ><img className='linkedin' src={linkedin} alt="Awais linkedin" /></a>    
       </div>
       <div className='code'>©Code with AWAIS</div>
-      <Privacy className='code2'>Privacy Policy</Privacy>
+      <div className='code2'>Privacy Policy</div>
     </FooterStyle>
      </>
   )

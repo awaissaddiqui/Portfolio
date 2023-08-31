@@ -1,5 +1,6 @@
 import React from 'react'
 import {Route, Routes, useLocation} from "react-router-dom"
+
 // import pages 
 import GlobalStyled from './components/GlobalStyled'
 import Nav from './components/Nav'
@@ -9,6 +10,11 @@ import ContactUS from './pages/ContactUS'
 import MyWork from "./pages/MyWork"
 import Error from './components/Error'
 import ProjectDetail from './pages/ProjectDetail'
+import Resume from './components/personalData/Resume'
+import Academic from './components/personalData/Academic'
+import Certifications from './components/personalData/Certifications'
+
+
 // Import Animation
 import { AnimatePresence } from "framer-motion";
 import ThankYou from './components/ThankYou'
@@ -27,6 +33,10 @@ const App = () => {
      <Route path='/services' element={<ServicesSection/>}/>
      <Route path='*' element={<Error/>}/>
      <Route path='/thanks' element={<ThankYou/>} />
+     <Route path='/resume' element={<Resume/>}/>
+     <Route path='/academic' element={<Academic/>}/>
+     <Route path='/certificates' element={<Certifications/>}/>
+
     </Routes>
      </AnimatePresence>
 

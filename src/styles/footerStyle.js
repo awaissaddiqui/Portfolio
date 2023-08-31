@@ -19,21 +19,26 @@ export const FooterStyle = styled.footer`
      }
      .icons{
           text-align: center;
-     }
-     .linkedin{
-          height: 3.5vh;
-          padding: 0rem 1rem;
+          margin: -2.5rem 0rem;
      }
      .upwork{
-          
+          margin: 0rem 0.7rem;
      }
-     @media(max-width: 728px){
-          height: 10vh;
-          margin: -2rem 0rem;
-          padding: 8rem 0rem;
-          z-index: 2;
+     .linkedin{
+          margin: 0rem 0.7rem;
+     }
+    
+     @media(max-width: 576px){
+          display: flex;
+          width: 100%;
+          padding: 3rem 2rem;
+          img{
+               width: 20%;
+               margin: 1rem 0rem;
+          }
+          .code, .code2{
+               margin: 0rem 4rem;
+               font-size :1.5rem ;
+          }
      }
      `; 
-export const Privacy = styled.div`
-
-`;

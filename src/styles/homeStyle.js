@@ -7,7 +7,7 @@ const Home1 = styled.div`
      justify-content: space-between;
      padding: 5rem 10rem;
      color: white;
-     @media (max-width: 992px){
+     @media (max-width: 576px){
           display: block;
           padding: 2rem 2rem;
           text-align: center;
@@ -33,16 +33,17 @@ const Image = styled.div`
      z-index: 2;
      img{
      max-width: 100%;
-     width: 100%;
-     height: 74vh;
+     width: 85%;
+     height: 50vh;
      object-fit: cover;
-     margin: 0rem 2.5rem;
+     margin: 0rem 4rem;
      border: 0px solid black;
      border-radius: 20px;
      }
-     @media (max-width: 900px){
+     @media (max-width: 576px){
           width: 100%;
           height: 70vh;
+          margin: 1rem 7rem;
      }
 `;
 const Hide = styled.div`

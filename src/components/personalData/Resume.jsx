@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import styled from 'styled-components';
-import { scrollReveal } from '../Animations/PageAnimation';
-import {useScroll} from "../components/UseScroll"
+import { scrollReveal } from '../../Animations/PageAnimation';
+import { useScroll } from '../UseScroll';
 const Resume = () => {
      const [element, controls] = useScroll();
   return (
@@ -22,9 +22,9 @@ const Button = styled(motion.button)`
           color: white;
           text-decoration: none;
      }
-     @media(max-width: 650px){
-          padding: 1rem 8rem;
-          margin:6rem 23rem;
+     @media(max-width: 500px){
+          display: flex;
+          padding: 1.5rem 3.5rem;
      }
 
 `;

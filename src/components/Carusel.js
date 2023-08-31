@@ -42,7 +42,7 @@ const Transition = styled(motion.div)`
      width: 60%;
      margin: 3rem 15rem;
      height: 75vh;
-     @media(max-width: 576px){
+     @media(max-width: 500px){
           width: 40%;
           height: 25vh;
           margin: 4rem 20rem;
