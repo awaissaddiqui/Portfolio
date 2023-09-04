@@ -161,7 +161,7 @@ const ServicesSection = () => {
                          whileTap={{ scale: 0.8 }}
                          whileHover={{ scale: 1.1 }}
                          className="chart container w-75 bg-light fw-bold" 
-                         data-aos="zoom-in-up"
+                         data-aos="flip-right"
                     >
                          <ChartD  />
                     </motion.div>
@@ -177,10 +177,11 @@ const Service = styled(motion.div)`
      color: white;
   }
   
-  @media (max-width: 576px){
+  @media (max-width: 728px){
                .col-sm-4{
                width: 30%;
-               margin: 0rem -0rem;
+               padding: 1rem 1rem;
+               margin: 2rem 0rem;
                margin-bottom: 2rem;
           }
      }
