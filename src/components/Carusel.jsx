@@ -5,7 +5,7 @@ import skill from "../images/pics/skill.png"
 import { MDBCarousel, MDBCarouselItem} from 'mdb-react-ui-kit';
 import styled from 'styled-components';
 import { scrollReveal } from '../Animations/PageAnimation';
-import {useScroll} from "../components/UseScroll"
+import {useScroll} from "./UseScroll"
 import { motion } from 'framer-motion';
 
 
@@ -14,7 +14,7 @@ const Carusel = () => {
   return (
      <Transition ref={element} variants={scrollReveal} initial="hidden" animate={controls} >
       <h3>Certification</h3>
-     <MDBCarousel showControls showIndicators>
+     <MDBCarousel showControls showIndicators >
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}

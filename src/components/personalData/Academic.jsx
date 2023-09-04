@@ -53,11 +53,12 @@ const Academic = () => {
 export default Academic
 
 const Education = styled.div`
-  background-color: white;
+  background-color: lightgray;
+  padding:3rem 7rem;
 `;
 
 const ButtonStyle = styled.button`
-  margin: 2rem 0.5rem;
+  margin: 2rem 1rem;
   float: right;
   a{
           color: white;

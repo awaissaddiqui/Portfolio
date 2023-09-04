@@ -1,4 +1,7 @@
-import React from "react";
+import React,{useEffect} from "react";
+// Import AOS (Animate on Scroll)
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 // import icons
 import react from "../images/react.svg";
@@ -22,6 +25,10 @@ import { motion } from "framer-motion";
 
 
 const ServicesSection = () => {
+     useEffect(()=>{
+          AOS.init();
+     },[])
+
      return (
           <>
                <Service
@@ -111,7 +118,7 @@ const ServicesSection = () => {
                               </div>
                               <Line2 className="line"></Line2>
 
-                              <div className="col-sm-4">
+                              <div className="col-sm-4" data-aos="flip-right">
                                    <motion.div
                                         whileTap={{ scale: 0.8 }}
                                         whileHover={{ scale: 1.1 }}
@@ -123,7 +130,7 @@ const ServicesSection = () => {
                                         </div>
                                    </motion.div>
                               </div>
-                              <div className="col-sm-4">
+                              <div className="col-sm-4" data-aos="flip-right">
                                    <motion.div
                                         whileTap={{ scale: 0.8 }}
                                         whileHover={{ scale: 1.1 }}
@@ -135,7 +142,7 @@ const ServicesSection = () => {
                                         </div>
                                    </motion.div>
                               </div>
-                              <div className="col-sm-4">
+                              <div className="col-sm-4" data-aos="flip-right">
                                    <motion.div
                                         whileTap={{ scale: 0.8 }}
                                         whileHover={{ scale: 1.1 }}
@@ -153,9 +160,10 @@ const ServicesSection = () => {
                     <motion.div
                          whileTap={{ scale: 0.8 }}
                          whileHover={{ scale: 1.1 }}
-                         className="chart container w-75 bg-light fw-bold"
+                         className="chart container w-75 bg-light fw-bold" 
+                         data-aos="zoom-in-up"
                     >
-                         <ChartD />
+                         <ChartD  />
                     </motion.div>
                     <ScrolTop />
                </Service>
