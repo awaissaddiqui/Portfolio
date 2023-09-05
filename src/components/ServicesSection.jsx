@@ -163,7 +163,6 @@ const ServicesSection = () => {
                          className="chart container w-75 bg-light fw-bold" 
                          data-aos="flip-right"
                     >
-                         <ChartD  />
                     </motion.div>
                     <ScrolTop />
                </Service>

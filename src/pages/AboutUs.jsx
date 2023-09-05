@@ -9,6 +9,7 @@ import ScrolTop from '../components/ScrolTop';
 // import Carusel from '../components/Carusel';
 // import Resume from '../components/Resume';
 import HideShow from '../components/HideShow';
+import ReachMe from '../components/ReachMe';
 const AboutUs = () => {
   return (
     <motion.div
@@ -19,8 +20,7 @@ const AboutUs = () => {
       <Home />
       <ScrolTop/>
       <HideShow/>
-      {/* <Resume/>
-      <Carusel/> */}
+      <ReachMe/>
       <Footer/>
     </motion.div>
   )
