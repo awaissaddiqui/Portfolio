@@ -161,8 +161,7 @@ const ServicesSection = () => {
                          whileTap={{ scale: 0.8 }}
                          whileHover={{ scale: 1.1 }}
                          className="chart container w-75 bg-light fw-bold" 
-                         data-aos="flip-right"
-                    >
+                         data-aos="flip-right" >
                     </motion.div>
                     <ScrolTop />
                </Service>

@@ -7,17 +7,29 @@ const Resume = () => {
      const [element, controls] = useScroll();
   return (
   <>
+  <ResumeDiv className="resume">
   <Button ref={element} variants={scrollReveal} initial="hidden" animate={controls}>
-     <a href='Awais.pdf' download="Awais.pdf">Download CV</a>     
+     <a href='Awais.pdf' target="_blank" download="Awais.pdf">Personal CV</a>     
      </Button>
+  <Button ref={element} variants={scrollReveal} initial="hidden" animate={controls}>
+     <a href='Resume.pdf' target="_blank" download="Resume.pdf">LinkedIn CV</a>     
+     </Button>
+  </ResumeDiv>
   
   </>
   )
 }
+const ResumeDiv = styled.div`
+     align-items: center;
+     display: inline-block;
+     position: relative;
+     margin: 5rem 25rem;
+     width: 50%;
+` 
 const Button = styled(motion.button)`
-     margin:8rem 10rem;
      border: 3px solid #23d997;
      padding: 1rem 1.5rem;
+     margin: 0rem 3rem;
      a{
           color: white;
           text-decoration: none;

@@ -41,10 +41,10 @@ const Academic = () => {
         </table>
       </Education>
       <ButtonStyle>
-        <a href='Awais.pdf' download="Awais.pdf">Transcript</a>
+        <a href='transcript.pdf' download="transcript.pdf" target="_blank">Transcript</a>
       </ButtonStyle>
       <ButtonStyle>
-        <a href='Awais.pdf' download="Awais.pdf">Collage Dmc</a>
+        <a href='dmc.pdf' download="dmc.pdf" target="_blank">Collage Dmc</a>
       </ButtonStyle>
     </>
   )
