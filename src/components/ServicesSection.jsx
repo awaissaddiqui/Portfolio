@@ -16,7 +16,6 @@ import github from "../images/github.svg";
 
 // import home2 from "../images/home2.jpg"
 import styled from "styled-components";
-import ChartD from "./Chart";
 import ScrolTop from "./ScrolTop";
 
 // Import Animation

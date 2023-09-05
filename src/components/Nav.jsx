@@ -17,6 +17,14 @@ const Nav = () => {
                          </Link>
                </h1>
                <ul>
+                    <li id='home'>
+                         <Link to="/" >Home</Link>
+                         <Line 
+                    transition={{duration:0.75}}
+                    initial={{width:"0%"}}
+                    animate={{width: pathname=== "/" ? "100%" :"0%"}}
+                         />
+                    </li>
                     <li>
                          <Link to="/services" >Services</Link>
                          <Line 

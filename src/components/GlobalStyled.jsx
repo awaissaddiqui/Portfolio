@@ -11,10 +11,13 @@ const GlobalStyled = createGlobalStyle`
 body{
      background: #1b1b1b;
      overflow-x: hidden;
+     @media (max-width:1200px){
+          display: grid;
+     } 
 }
 html{
-     @media(max-width:1200px){
-          font-size: 40%;
+     @media (max-width:1200px){
+          font-size: 45%;
      }
 }
 button{

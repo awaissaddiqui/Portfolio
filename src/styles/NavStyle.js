@@ -19,6 +19,9 @@ const StyledNav = styled.nav`
           display: flex;
           list-style: none;
           font-family: "Inter", sans-serif;
+          #home{
+               display: none;
+          }
      }
      img{
 
@@ -29,24 +32,29 @@ const StyledNav = styled.nav`
           padding-left: 9rem;
           position: relative;
      }
-     @media (max-width: 576px){
+     @media (max-width: 728px){
           flex-direction: column;
-          padding: 2rem 4rem;
+          padding: 1.5rem 8rem;
           position: sticky;
+          width: 150%;
           
           #logo{
                display: inline-block;
                margin: 0rem 45rem;
-               width: 13%;
+               display: none;
+               width: 5%;
           }
           ul{
-               padding: 0.5rem;
                justify-content: space-around;
                width: 100%;
-               margin: 0rem 2rem;
+               margin: 0rem 0.5rem;
+               #home{
+                    display: inline-block;
+               }
           }
           li{
-               padding: 0;
+               padding: 0rem 3rem;
+               margin: 0rem 0.5rem;
           }
      }
      `;
@@ -61,7 +69,7 @@ const Line = styled(motion.div)`
      background: #23d997;
      position: relative;
      left: 5%;
-     @media(max-width: 992px){
+     @media(max-width: 728px){
           left: 0%;
      }
      

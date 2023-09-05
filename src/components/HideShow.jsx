@@ -22,26 +22,24 @@ const Hide_show = () => {
     </Heading>
     <CardGroup 
     className="card-group text-white " 
-    data-aos="zoom-in-up"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1500"
+    data-aos="zoom-in-down"
     >
     <Data className="card col-sm-12  bg-info " >
-  <img className="" src={cv} alt="Card "/>
+  <img  src={cv} alt="Card "/>
   <div className="card-body ">
-     <Link to="/resume" className=""><button className="">View Resume</button></Link>
+     <Link to="/resume" ><button >View Resume</button></Link>
   </div>
 </Data>
     <Data className="card col-sm-12 bg-danger" >
-  <img className="" src={academic} alt="Card  2"/>
+  <img  src={academic} alt="Card  2"/>
   <div className="card-body">
-     <Link to="/academic" className=""> <button className="">Acdemic Record</button></Link>
+     <Link to="/academic" > <button >Acdemic Record</button></Link>
   </div>
 </Data>
     <Data className="card col-sm-12 bg-success" >
-  <img className="" src={certificate} alt="Card  3"/>
+  <img  src={certificate} alt="Card  3"/>
   <div className="card-body">
-     <Link to="/certificates" className=""><button className="">Achievements</button> </Link>
+     <Link to="/certificates" ><button >Achievements</button> </Link>
   </div>
 </Data>
 </CardGroup>
@@ -53,14 +51,14 @@ const Hide_show = () => {
 export default Hide_show
 
 const CardGroup = styled.div`
-     min-height: 80vh;
+     min-height: 60vh;
      width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      @media(max-width: 768px) {
-          flex-direction:column ;
-          margin: 10rem 0rem;
+          flex-direction: row;
+          margin: 4rem 30rem;
      }
 `
 const Data = styled.div`
@@ -73,10 +71,24 @@ const Data = styled.div`
           height: 20vh;
           margin: 0.5rem 7.5rem;
      }
+     @media(max-width: 768px){
+          img{
+               width: 30%;
+               border: 1px solid white;
+               margin: 1rem 8rem;
+          }
+     }
 
 `
 const Heading = styled.h1`
      color: white;
      font-family: "Inter", sans-serif;
      text-align: center;
+     @media(max-width: 576px){
+               display: flex;
+               display: none;
+               margin:1rem 8rem;    
+               border: 1px solid white;
+     
+     }
 `
