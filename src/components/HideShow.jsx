@@ -24,7 +24,7 @@ const Hide_show = () => {
     className="card-group text-white " 
     data-aos="zoom-in-down"
     >
-    <Data className="card col-sm-12  bg-info " >
+    <Data className="card col-sm-12  bg-primary " >
   <img  src={cv} alt="Card "/>
   <div className="card-body ">
      <Link to="/resume" ><button >View Resume</button></Link>

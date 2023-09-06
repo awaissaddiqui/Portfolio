@@ -8,7 +8,7 @@ const Home1 = styled.div`
      padding: 4rem 8rem;
      color: white;
      @media (max-width: 728px){
-          /* display: block; */
+          display: block;
           position: relative;
           width: 150%;
          
@@ -24,26 +24,26 @@ const Description = styled.div`
      @media (max-width: 992px){
          padding :0;
          button{
-          margin: 0rem 0rem 15rem 0rem;
+          margin: 0rem 0rem 1rem 0rem;
          }
      }
 `;
 const Image = styled.div`
-     flex: 1;
+     flex: 0.5;
      overflow: hidden;
      z-index: 2;
      img{
-     max-width: 100%;
-     width: 85%;
-     height: 50vh;
-     object-fit: cover;
+     max-width: 80%;
+     width: 100%;
+     height: 70vh;
+     object-fit:scale-down;
      border: 0px solid black;
      border-radius: 20px;
      }
      @media (max-width: 576px){
           width: 50%;
           height: 70vh;
-          /* margin: 1rem 7rem; */
+          margin: 1rem 7rem;
      }
 `;
 const Hide = styled.div`
