@@ -28,6 +28,10 @@ This is my professional portfolio website, created using ReactJS and a variety o
 
 https://awais-saddiqui.web.app/
 
+## Documentation:
+
+https://blog.logrocket.com/8-ways-deploy-react-app-free/#firebase
+
 ## How To use:
 
 ### `npm install`
