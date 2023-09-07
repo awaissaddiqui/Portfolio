@@ -24,7 +24,7 @@ const Home = () => {
             <motion.h2 variants={titleAnimation}>Elevating Ideas through</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnimation}>Code. A<span>Journey</span> of</motion.h2>
+            <motion.h2 variants={titleAnimation}>Code. A<span> Journey</span> of</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnimation}> Innovation and Creation</motion.h2>

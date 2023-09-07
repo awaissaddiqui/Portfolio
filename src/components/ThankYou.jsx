@@ -8,7 +8,7 @@ const ThankYou = () => {
      <img src={envelope} alt="Thank You Message"/>
      <h1>Thanks for submitting!</h1>
      <div>your message has been sent!</div>
-     <button><Link to="/"/>Go Home</button>
+     <button><Link to="/">Go Home</Link></button>
     </Message>
   )
 }
