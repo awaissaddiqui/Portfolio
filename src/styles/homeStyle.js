@@ -1,35 +1,46 @@
 import styled from "styled-components"
 // styled Home.jsx
 const Home1 = styled.div`
-     min-height: 80vh;
      display: flex;
      align-items: center;
-     justify-content: space-between;
-     padding: 4rem 8rem;
+     justify-content: space-around;
      color: white;
-     @media (max-width: 728px){
-          display: block;
-          position: relative;
-          width: 150%;
-         
+     padding: 1rem 2rem;
+     margin: 1rem;
+     position:relative;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+
+     @media (width <= 560px){
+          flex-direction: column;
+          width: 140%;
+          padding: 4rem 2rem;
      }
      `;
+
 const Description = styled.div`
-     flex:1;
-     font-family: 'Lobster', cursive;
+     flex:2;
+     font-family: 'Lobster, cursive';
+     size:100vw;
      z-index: 2;
      h2{
      font-weight: lighter;
      }
-     @media (max-width: 992px){
-         padding :0;
+     
+     @media (width <= 560px){
+         padding :2rem 1rem;
          button{
-          margin: 0rem 0rem 1rem 0rem;
+          margin: 0 auto 3rem;
+
          }
      }
 `;
 const Image = styled.div`
-     flex: 0.5;
+     flex: 1;
      overflow: hidden;
      z-index: 2;
      img{
@@ -42,7 +53,7 @@ const Image = styled.div`
      }
      @media (max-width: 576px){
           width: 50%;
-          height: 70vh;
+          height: 50vh;
           margin: 1rem 7rem;
      }
 `;
@@ -51,4 +62,5 @@ const Hide = styled.div`
 `;
 // Exports all components
 export {
-     Home1, Description, Image,Hide}
+     Home1, Description, Image, Hide
+}

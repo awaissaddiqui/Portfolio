@@ -37,7 +37,7 @@ const ServicesSection = () => {
                     exit="exit"
                     className="container"
                >
-                <motion.h2 variants={titleAnimation}>TECH I'M FAMILIAR WITH</motion.h2>
+               <motion.h2 variants={titleAnimation}>TECH I'M FAMILIAR WITH</motion.h2>
                     <div className="description text-center m-5">
                          <div className="row">
                               <div className="col-sm-4">
@@ -176,10 +176,13 @@ const Service = styled(motion.div)`
   
   @media (max-width: 728px){
                .col-sm-4{
-               width: 30%;
-               padding: 1rem 1rem;
-               margin: 2rem 0rem;
-               margin-bottom: 2rem;
+               flex-direction: column;
+               justify-content: center;
+               margin-top: 1rem;
+               margin-left: 10rem;
+          }
+          .line{
+               display: none;
           }
      }
 
