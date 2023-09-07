@@ -1,7 +1,7 @@
 import React from 'react'
-import { FooterStyle } from '../styles/footerStyle'
+// import { FooterStyle } from '../styles/footerStyle'
 import heart from "../images/footer/heart.png"
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import '../styles/footer-styles.css';
 
 const Footer = () => {
@@ -29,11 +29,11 @@ const Footer = () => {
 */
 
 export default Footer
-const Slogan = styled.div`
-  text-align: center;
-  flex: 1;
-  width: 50%;
-  color: #fff;
-  margin: 0rem 20rem;
-  padding: 0rem 2rem;
-`
+// const Slogan = styled.div`
+//   text-align: center;
+//   flex: 1;
+//   width: 50%;
+//   color: #fff;
+//   margin: 0rem 20rem;
+//   padding: 0rem 2rem;
+// `

@@ -1,11 +1,11 @@
 {
   "hosting": {
     "public": "build",
+    "site":"awais-saddiqui",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-
     ],
     "rewrites": [
       {
