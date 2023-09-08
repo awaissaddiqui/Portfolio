@@ -31,7 +31,7 @@ const Home = () => {
           </Hide>
         </motion.div>
         <motion.p variants={paraAnimation}>I'm providing an amazing skills .
-          Please contact us for professional work.</motion.p>
+          Please contact us for <br></br><span> professional work.</span></motion.p>
         <motion.button variants={paraAnimation} id="btnHome" onClick={buttonClicked} >Let's Talk</motion.button>
       </Description>
       <Image>

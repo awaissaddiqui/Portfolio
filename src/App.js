@@ -15,6 +15,7 @@ import Academic from './components/personalData/Academic'
 import Certifications from './components/personalData/Certifications'
 
 
+
 // Import Animation
 import { AnimatePresence } from "framer-motion";
 import ThankYou from './components/ThankYou'
@@ -36,6 +37,7 @@ const App = () => {
      <Route path='/resume' element={<Resume/>}/>
      <Route path='/academic' element={<Academic/>}/>
      <Route path='/certificates' element={<Certifications/>}/>
+    
 
     </Routes>
      </AnimatePresence>
