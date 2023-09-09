@@ -4,7 +4,6 @@ This is my professional portfolio website, created using ReactJS and a variety o
 
 ## Features:
 
-- A responsive and mobile-friendly design
 - A clean and modern user interface
 - A variety of features to showcase my skills and experience
 - A contact form to get in touch with me
