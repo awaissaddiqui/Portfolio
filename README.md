@@ -28,6 +28,9 @@ This is my professional portfolio website, created using ReactJS and a variety o
 
 https://awais-saddiqui.web.app/
 
+## Vercel Hosting
+https://awais-saddiqui143.vercel.app/
+
 ## Documentation:
 
 https://blog.logrocket.com/8-ways-deploy-react-app-free/#firebase
